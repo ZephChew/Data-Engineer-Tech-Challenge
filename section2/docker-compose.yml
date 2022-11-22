@@ -1,0 +1,16 @@
+version: "2.4"
+
+services:
+  frontend:
+   container_name: pgadmin4
+   image: pgadmin4
+   build: ./pgadmin4
+   ports:
+   - "8080:80"
+  
+  backend:
+   container_name: postgres
+   image: postgres
+   build: ./pgsql
+   ports:
+   - "5432:5432"
