@@ -16,15 +16,24 @@ Set up job with the below values
 
 ### docker-compose have to be installed on target machine
 
-Bring up docker containers 
+```Bring up docker containers 
 
-`docker-compose up -d --build`
+docker-compose up -d --build
 
 Login to pgadmin4 on localhost:8080
 
 Username: admin@tech.com
 Password: password
 
+On pgadmin4 page, right click 'Servers' > Click on 'Register' > 'Server'
+On General tab, type in any name (does not matter)
+On Connection tab, type in the following
+
+hostname/address: postgres
+username: postgres
+password: postgres
+
+Click on 'Save' to complete the server setup```
 
 ## Section 3: System Design
 
