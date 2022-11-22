@@ -1,45 +1,16 @@
-# Data Engineer Tech Challenge
-
-This test is split into 5 sections
-
-1. **data pipelines**
-2. **databases**
-3. **system design**
-4. **charts & APIs**
-5. **machine learning**
-
-## Submission Guidelines
-
-Please create a Github repository containing your submission and send us an email containing a link to the repository.
-
-Dos:
-
-- Frequent commits
-- Descriptive commit messages
-- Clear documentation
-- Comments in your code
-
-Donts:
-
-- Only one commit containing all the files
-- Submitting a zip file
-- Sparse or absent documentation
-- Code which is hard to read
-
 ## Section 1: Data Pipelines
 
-The objective of this section is to design and implement a solution to process a data file on a regular interval (e.g. daily). Assume that there are 2 data files `dataset1.csv` and `dataset2.csv`, design a solution to process these files, along with the scheduling component. The expected output of the processing task is a CSV file including a header containing the field names.
+### Crontab will be used to run the script daily at 01:15AM
 
-You can use common scheduling solutions such as `cron` or `airflow` to implement the scheduling component. You may assume that the data file will be available at 1am everyday. Please provide documentation (a markdown file will help) to explain your solution.
+Open crontab editor 
 
-Processing tasks:
+`crontab -e`
 
-- Split the `name` field into `first_name`, and `last_name`
-- Remove any zeros prepended to the `price` field
-- Delete any rows which do not have a `name`
-- Create a new field named `above_100`, which is `true` if the price is strictly greater than 100
+Set up job with the below values
 
-_Note: please submit the processed dataset too._
+`15 1 * * * /usr/local/bin/python3 path_to_application/section1-gvt/main.py`
+
+*change path_to_application to actual path*
 
 ## Section 2: Databases
 
