@@ -44,4 +44,5 @@ Click on 'Save' to complete the server setup
 ## Section 5: Machine Learning
 
 category_encoders was used to prepare the data
+
 gini index was used to train the model
