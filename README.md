@@ -14,33 +14,17 @@ Set up job with the below values
 
 ## Section 2: Databases
 
-You are appointed by a car dealership to create their database infrastructure. There is only one store. In each business day, cars are being sold by a team of salespersons. Each transaction would contain information on the date and time of transaction, customer transacted with, and the car that was sold.
+### docker-compose have to be installed on target machine
 
-The following are known:
+Bring up docker containers 
 
-- Each car can only be sold by one salesperson.
-- There are multiple manufacturers’ cars sold.
-- Each car has the following characteristics:
-- Manufacturer
-- Model name
-- Serial number
-- Weight
-- Price
+`docker-compose up -d --build`
 
-Each sale transaction contains the following information:
+Login to pgadmin4 on localhost:8080
 
-- Customer Name
-- Customer Phone
-- Salesperson
-- Characteristics of car sold
+Username: admin@tech.com
+Password: password
 
-Set up a PostgreSQL database using the base `docker` image [here](https://hub.docker.com/_/postgres) given the above. We expect at least a `Dockerfile` which will stand up your database with the DDL statements to create the necessary tables. Produce entity-relationship diagrams as necessary to illustrate your design.
-
-Your team also needs you to query some information from the database that you have designed. Note that the business requirements for the database is **not limited** to the 2 queries below, do design your database to account a wide range of business use cases. You are tasked to write a `sql` statement for each of the following task:
-
-1. I want to know the list of our customers and their spending.
-
-2. I want to find out the top 3 car manufacturers that customers bought by sales (quantity) and the sales number for it in the current month.
 
 ## Section 3: System Design
 
