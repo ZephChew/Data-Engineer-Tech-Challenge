@@ -16,7 +16,8 @@ Set up job with the below values
 
 ### docker-compose have to be installed on target machine
 
-```Bring up docker containers 
+```
+Bring up docker containers 
 
 docker-compose up -d --build
 
@@ -33,7 +34,8 @@ hostname/address: postgres
 username: postgres
 password: postgres
 
-Click on 'Save' to complete the server setup```
+Click on 'Save' to complete the server setup
+```
 
 ## Section 3: System Design
 
